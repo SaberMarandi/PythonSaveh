@@ -1,7 +1,7 @@
-num = float(input("یک عدد: "))
-if num > 0:
-    print("مثبت")
-elif num < 0:
-    print("منفی")
-else:
-    print("صفر")
+# A0008 - محاسبه مساحت مستطیل
+# محاسبه مساحت مستطیل با دریافت طول و عرض
+
+length = int(input())
+width = int(input())
+area = length * width
+print(area)

@@ -1,5 +1,7 @@
-num = int(input(" عدد: "))
-if num % 2 == 0:
-    print("زوج")
-else:
-    print("فرد")
+# A0006 - باقیمانده تقسیم
+# محاسبه باقیمانده تقسیم دو عدد
+
+a = int(input())
+b = int(input())
+result = a % b
+print(result)

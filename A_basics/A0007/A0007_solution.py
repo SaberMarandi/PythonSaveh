@@ -1,5 +1,7 @@
-n = int(input("یک عدد: "))
-i = 1
-while i <= n:
-    print(i)
-    i += 1
+# A0007 - توان یک عدد
+# محاسبه توان یک عدد
+
+base = int(input())
+power = int(input())
+result = base ** power
+print(result)
