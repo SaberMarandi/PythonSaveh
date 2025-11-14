@@ -1,4 +1,7 @@
-﻿# A0198 - محاسبه مساحت مثلث
+# A0198 - محاسبه مساحت مثلث
 
-# کد راهحل
+base = float(input())
+height = float(input())
 
+area = 0.5 * base * height
+print(area)

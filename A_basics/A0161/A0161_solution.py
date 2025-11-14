@@ -1,4 +1,14 @@
-﻿# A0161 - کوچکترین مضرب مشترک
+# A0161 - LCM با فرمول
 
-# کد راهحل
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
+def lcm(a, b):
+    return (a * b) // gcd(a, b)
+
+a = int(input())
+b = int(input())
+
+print(lcm(a, b))

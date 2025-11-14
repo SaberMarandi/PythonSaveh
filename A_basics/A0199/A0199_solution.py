@@ -1,4 +1,6 @@
-﻿# A0199 - محاسبه مساحت مربع
+# A0199 - محاسبه مساحت مربع
 
-# کد راهحل
+side = float(input())
 
+area = side * side
+print(int(area) if area == int(area) else area)

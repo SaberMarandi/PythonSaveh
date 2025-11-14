@@ -1,4 +1,11 @@
-﻿# A0160 - بزرگترین مقسوم علیه مشترک
+# A0160 - GCD با الگوریتم اقلیدس
 
-# کد راهحل
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
+a = int(input())
+b = int(input())
+
+print(gcd(a, b))

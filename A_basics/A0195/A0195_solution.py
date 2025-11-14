@@ -1,4 +1,8 @@
-﻿# A0195 - تبدیل رادیان به درجه
+# A0195 - تبدیل رادیان به درجه
 
-# کد راهحل
+import math
 
+radians = float(input())
+degrees = math.degrees(radians)
+
+print(f"{degrees:.2f}")

@@ -1,4 +1,5 @@
-﻿# A0184 - عملیات بیتی NOT
+# A0184 - عملیات بیتی NOT
 
-# کد راهحل
-
+a = int(input())
+result = ~a
+print(result)

@@ -1,4 +1,10 @@
-﻿# A0156 - توان عدد
+# A0156 - توان بدون عملگر **
 
-# کد راهحل
+base = int(input())
+exp = int(input())
 
+result = 1
+for i in range(exp):
+    result *= base
+
+print(result)

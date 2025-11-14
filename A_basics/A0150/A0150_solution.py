@@ -1,19 +1,18 @@
 # A0150 - الگوریتم اقلیدس گسترش یافته
-# محاسبه GCD و ضرایب x, y
 
 def extended_gcd(a, b):
-    if b == 0:
-        return a, 1, 0
+    if a == 0:
+        return b, 0, 1
     
-    gcd, x1, y1 = extended_gcd(b, a % b)
-    x = y1
-    y = x1 - (a // b) * y1
+    gcd, x1, y1 = extended_gcd(b % a, a)
+    x = y1 - (b // a) * x1
+    y = x1
     
     return gcd, x, y
 
-a, b = map(int, input().split())
+a = int(input())
+b = int(input())
 gcd, x, y = extended_gcd(a, b)
 
-print(gcd)
-print(x)
-print(y)
+print(f"GCD: {gcd}")
+print(f"x: {x}, y: {y}")

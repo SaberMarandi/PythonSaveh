@@ -1,4 +1,10 @@
-﻿# A0159 - باقیمانده تقسیم
+# A0159 - باقیمانده بدون modulo
 
-# کد راهحل
+a = int(input())
+b = int(input())
 
+# محاسبه باقیمانده بدون %
+quotient = a // b
+remainder = a - (quotient * b)
+
+print(remainder)

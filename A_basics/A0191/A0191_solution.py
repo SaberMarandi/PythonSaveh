@@ -1,4 +1,9 @@
-﻿# A0191 - مثلثات - سینوس
+# A0191 - محاسبه سینوس
 
-# کد راهحل
+import math
 
+angle_degrees = float(input())
+angle_radians = math.radians(angle_degrees)
+sin_value = math.sin(angle_radians)
+
+print(f"{sin_value:.4f}")

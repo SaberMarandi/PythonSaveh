@@ -1,4 +1,6 @@
-﻿# A0183 - عملیات بیتی XOR
+# A0183 - عملیات بیتی XOR
 
-# کد راهحل
-
+a = int(input())
+b = int(input())
+result = a ^ b
+print(result)

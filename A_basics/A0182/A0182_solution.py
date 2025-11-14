@@ -1,4 +1,6 @@
-﻿# A0182 - عملیات بیتی OR
+# A0182 - عملیات بیتی OR
 
-# کد راهحل
-
+a = int(input())
+b = int(input())
+result = a | b
+print(result)

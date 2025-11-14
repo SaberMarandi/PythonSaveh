@@ -1,4 +1,6 @@
-﻿# A0197 - محاسبه محیط دایره
+# A0197 - محاسبه محیط دایره
 
-# کد راهحل
-
+import math
+radius = float(input())
+perimeter = 2 * math.pi * radius
+print(round(perimeter, 2))

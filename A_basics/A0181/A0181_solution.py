@@ -1,4 +1,6 @@
-﻿# A0181 - عملیات بیتی AND
+# A0181 - عملیات بیتی AND
 
-# کد راهحل
-
+a = int(input())
+b = int(input())
+result = a & b
+print(result)

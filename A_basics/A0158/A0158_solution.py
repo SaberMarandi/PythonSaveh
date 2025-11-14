@@ -1,4 +1,11 @@
-﻿# A0158 - گرد کردن عدد
+# A0158 - گرد کردن بدون round
 
-# کد راهحل
+n = float(input())
 
+# گرد کردن دستی
+if n >= 0:
+    result = int(n + 0.5)
+else:
+    result = int(n - 0.5)
+
+print(result)

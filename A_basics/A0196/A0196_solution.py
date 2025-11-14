@@ -1,4 +1,6 @@
-﻿# A0196 - محاسبه مساحت دایره
+# A0196 - محاسبه مساحت دایره
 
-# کد راهحل
-
+import math
+radius = float(input())
+area = math.pi * radius ** 2
+print(round(area, 2))
