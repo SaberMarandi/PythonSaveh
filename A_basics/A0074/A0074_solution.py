@@ -1,6 +1,6 @@
-# A0074 - چاپ مثلث راست‌گوشه
-# چاپ مثلث راست‌گوشه از ستاره‌ها
+# A0074 - معکوس عدد
+# معکوس کردن یک عدد
 
 n = int(input())
-for i in range(1, n + 1):
-    print(' ' * (n - i) + '*' * i)
+reversed_n = int(str(n)[::-1])
+print(reversed_n)

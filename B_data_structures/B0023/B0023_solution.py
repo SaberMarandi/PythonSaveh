@@ -1,5 +1,6 @@
-# B0023 - حذف عنصر از لیست
-# لیست
+# B0023 - مرتب‌سازی لیست
+# مرتب‌سازی صعودی یک لیست
 
-# کد راه‌حل
-
+numbers = list(map(int, input().split()))
+numbers.sort()
+print(*numbers)

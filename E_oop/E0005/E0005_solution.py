@@ -1,17 +1,18 @@
-class Student:
-    def __init__(self, name, age, grade):
-        self.name = name
-        self.age = age
-        self.grade = grade
+# E0005 - کلاس دایره
+# محاسبه مساحت و محیط دایره
+
+import math
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
     
-    def display(self):
-        return f"نام: {self.name}, سن: {self.age}, نمره: {self.grade}"
+    def area(self):
+        return math.pi * self.radius ** 2
+    
+    def circumference(self):
+        return 2 * math.pi * self.radius
 
-# دریافت ورودی
-name = input()
-age = int(input())
-grade = float(input())
-
-# ایجاد شیء و نمایش اطلاعات
-student = Student(name, age, grade)
-print(student.display())
+r = float(input())
+circle = Circle(r)
+print(f"Area: {circle.area():.2f}, Circumference: {circle.circumference():.2f}")

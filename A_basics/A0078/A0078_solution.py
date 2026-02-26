@@ -1,9 +1,6 @@
-# A0078 - چاپ مربع توخالی
-# چاپ مربع توخالی از ستاره‌ها
+# A0078 - بزرگترین رقم
+# پیدا کردن بزرگترین رقم یک عدد
 
-n = int(input())
-for i in range(n):
-    if i == 0 or i == n - 1:
-        print('*' * n)
-    else:
-        print('*' + ' ' * (n - 2) + '*')
+n = input()
+max_digit = max(int(d) for d in n)
+print(max_digit)

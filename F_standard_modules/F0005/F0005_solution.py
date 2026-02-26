@@ -1,5 +1,8 @@
-# F0005 - ماژول os
-# عمومی
+# F0005 - محاسبه جذر
+# محاسبه جذر با ماژول math
 
-# کد راه‌حل
+import math
 
+n = float(input())
+result = math.sqrt(n)
+print(f"{result:.2f}")

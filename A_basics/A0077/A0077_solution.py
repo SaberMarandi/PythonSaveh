@@ -1,13 +1,11 @@
-# A0077 - چاپ الماس ستاره
-# چاپ الماس از ستاره‌ها
+# A0077 - اعداد فیبوناچی
+# چاپ n عدد اول دنباله فیبوناچی
 
 n = int(input())
-mid = n // 2 + 1
+a, b = 0, 1
 
-# نیمه بالایی
-for i in range(1, mid + 1):
-    print(' ' * (mid - i) + '*' * (2 * i - 1))
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
 
-# نیمه پایینی
-for i in range(mid - 1, 0, -1):
-    print(' ' * (mid - i) + '*' * (2 * i - 1))
+print()

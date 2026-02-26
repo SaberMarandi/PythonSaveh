@@ -1,6 +1,10 @@
-# A0075 - چاپ هرم ستاره
-# چاپ هرم از ستاره‌ها
+# A0075 - فاکتوریل
+# محاسبه فاکتوریل یک عدد
 
 n = int(input())
+factorial = 1
+
 for i in range(1, n + 1):
-    print(' ' * (n - i) + '*' * (2 * i - 1))
+    factorial *= i
+
+print(factorial)

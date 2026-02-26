@@ -1,6 +1,14 @@
-# A0073 - چاپ مربع ستاره
-# چاپ مربع از ستاره‌ها
+# A0073 - بررسی عدد اول
+# بررسی اول بودن یک عدد
 
 n = int(input())
-for i in range(n):
-    print('*' * n)
+
+if n < 2:
+    print("No")
+else:
+    is_prime = True
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+    print("Yes" if is_prime else "No")

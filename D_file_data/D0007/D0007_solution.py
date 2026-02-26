@@ -1,15 +1,9 @@
-# D0007 - کپی فایل
-# کپی کردن یک فایل به فایل دیگر
+# D0007 - خواندن فایل
+# خواندن و چاپ محتوای فایل
 
-import shutil
+filename = input()
 
-source = input()
-destination = input()
+with open(filename, 'r', encoding='utf-8') as f:
+    content = f.read()
 
-try:
-    shutil.copy(source, destination)
-    print("File copied successfully")
-except FileNotFoundError:
-    print("Source file not found")
-except Exception as e:
-    print(f"Error: {e}")
+print(content)

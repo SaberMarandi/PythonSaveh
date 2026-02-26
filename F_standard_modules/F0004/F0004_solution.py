@@ -1,11 +1,8 @@
-# F0004 - استفاده از ماژول random
-# تولید اعداد تصادفی
+# F0004 - تولید عدد تصادفی
+# تولید عدد تصادفی بین a و b
 
 import random
 
-n = int(input())
 a = int(input())
 b = int(input())
-
-for i in range(n):
-    print(random.randint(a, b))
+print(random.randint(a, b))

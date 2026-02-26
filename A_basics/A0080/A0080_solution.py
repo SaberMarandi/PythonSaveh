@@ -1,8 +1,6 @@
-# A0080 - چاپ الگوی اعداد مثلثی
-# چاپ مثلث از اعداد
+# A0080 - مجموع ارقام
+# محاسبه مجموع ارقام یک عدد
 
-n = int(input())
-for i in range(1, n + 1):
-    for j in range(1, i + 1):
-        print(j, end='')
-    print()
+n = input()
+total = sum(int(d) for d in n)
+print(total)

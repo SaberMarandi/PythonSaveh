@@ -1,20 +1,18 @@
-# E0004 - متدهای کلاس
-# کلاس مستطیل با متدهای محاسبه مساحت و محیط
+# E0004 - کلاس مستطیل
+# محاسبه مساحت و محیط مستطیل
 
 class Rectangle:
-    def __init__(self, length, width):
-        self.length = length
+    def __init__(self, width, height):
         self.width = width
+        self.height = height
     
     def area(self):
-        return self.length * self.width
+        return self.width * self.height
     
     def perimeter(self):
-        return 2 * (self.length + self.width)
+        return 2 * (self.width + self.height)
 
-length = int(input())
-width = int(input())
-
-rect = Rectangle(length, width)
-print(rect.area())
-print(rect.perimeter())
+w = int(input())
+h = int(input())
+rect = Rectangle(w, h)
+print(f"Area: {rect.area()}, Perimeter: {rect.perimeter()}")

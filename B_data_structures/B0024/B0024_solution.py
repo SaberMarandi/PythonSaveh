@@ -1,5 +1,7 @@
-# B0024 - جستجوی عنصر در لیست
-# لیست
+# B0024 - پیدا کردن عنصر
+# بررسی وجود عنصر در لیست
 
-# کد راه‌حل
+numbers = list(map(int, input().split()))
+x = int(input())
 
+print("Yes" if x in numbers else "No")

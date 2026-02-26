@@ -1,10 +1,9 @@
-# D0006 - خواندن تمام خطوط فایل
-# شمارش تعداد خطوط فایل
+# D0006 - شمارش خطوط فایل
+# شمارش تعداد خطوط یک فایل متنی
 
 filename = input()
-try:
-    with open(filename, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-        print(len(lines))
-except FileNotFoundError:
-    print("فایل پیدا نشد")
+
+with open(filename, 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+
+print(len(lines))
